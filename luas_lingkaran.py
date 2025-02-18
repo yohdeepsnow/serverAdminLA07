@@ -1,7 +1,27 @@
-def luas_lingkaran(radius):
-	return 3.14 * radius * radius
+def calculator():
+	
+	print("Ini kalkulator buat 2 angka")
+	print("Yang basic-basic aja: +, -, *, /")
+	
+	try:
+		num1 = float(input("Num 1: "))
+		operator = input("Masukkan operator: ")
+		num2 = float(input("Num 2: "))
 
-r = float(input("Masukkan jari-jari: "))
-hasil = float(luas_lingkaran(r))
-print(f"Luas lingkaran untuk jari-jari {r} adalah {hasil:.2f}")
+		if operator == '+':
+			result = num1 + num2
+		elif operator == '-':
+			result = num1 - num2
+		elif operator == '*':
+			result = num1 * num2
+		elif operator == '/':
+			result = num1 / num2
+		else:
+			print("Operator salah")
+			return
 
+		print(f"Hasil: {result}")
+	except ValueError:
+		print("Input lu gajelas ga valid, masukin angka")
+
+calculator()
