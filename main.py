@@ -1,6 +1,7 @@
 def penambahan(a,b):
 	total = a+b
 	return (total)
+
 def kurang(a,b):
     total= a-b
     return (total)
